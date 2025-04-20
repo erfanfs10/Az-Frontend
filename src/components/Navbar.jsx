@@ -9,13 +9,13 @@ const Navbar = () => {
       <Flex direction="row" alignItems="center" justifyContent="space-between">
         <IconName />
         <HStack gap="10">
-          <Link variant="underline" colorPalette="teal">
+          <Link variant="underline">
             About us
           </Link>
-          <Link variant="underline" colorPalette="teal">
+          <Link variant="underline">
             Projects
           </Link>
-          <Link variant="underline" colorPalette="teal">
+          <Link variant="underline">
             Our Team
           </Link>
         </HStack>
