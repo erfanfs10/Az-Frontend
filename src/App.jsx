@@ -6,7 +6,7 @@ function App() {
   return (
     <Flex m="15px" gap="2" direction="column">
       <Navbar />
-      <MainContent/>
+      <MainContent />
     </Flex>
   );
 }
