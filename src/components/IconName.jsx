@@ -6,7 +6,7 @@ const IconName = () => {
   return (
     <HStack>
       <Image src={Logo} />
-      <Text fontSize="lg" fontWeight="bold">
+      <Text fontSize="xl" fontWeight="bold">
         Impalers
       </Text>
     </HStack>
