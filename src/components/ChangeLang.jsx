@@ -3,7 +3,7 @@ import { Button } from '@chakra-ui/react'
 
 const ChangeLang = () => {
   return (
-    <Button variant="ghost">Eng / Fa</Button>
+    <Button variant="outline">Eng / Fa</Button>
   )
 }
 
