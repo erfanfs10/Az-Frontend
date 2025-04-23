@@ -4,7 +4,7 @@ import { Text, Flex, Separator } from "@chakra-ui/react";
 const SectionName = ({ title }) => {
   return (
     <>
-      <Separator size="md" my="30px" />
+      <Separator size="sm" my="30px" />
       <Flex justifyContent="center">
         <Text
           borderRadius="lg"
