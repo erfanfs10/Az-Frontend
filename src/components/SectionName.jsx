@@ -10,11 +10,11 @@ const SectionName = ({ title }) => {
           borderRadius="lg"
           shadow="md"
           width="fit-content"
-          bgColor="gray.300"
           px="6"
           py="2"
           fontSize="xl"
           fontWeight="bold"
+          bg={{_light: "gray.300", _dark: "gray.600"}}
         >
           {title}
         </Text>
