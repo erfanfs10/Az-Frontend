@@ -15,17 +15,18 @@ const WhoWeAre = () => {
           mt="20px"
           direction="row"
           wrap="wrap"
-          gap="4"
-          justifyContent="space-between"
+          gap="2"
+          justifyContent="space-around"
           alignItems="center"
         >
-          <Card.Root width="320px">
+          <Card.Root width="300px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Card.Description>
                 <Image
+                  borderRadius="lg"
                   src={mohammad}
                   alt="Naruto vs Sasuke"
-                  aspectRatio={3 / 4}
+                  aspectRatio={6 / 7}
                   width="300px"
                 />
               </Card.Description>
@@ -42,13 +43,14 @@ const WhoWeAre = () => {
             </Card.Footer>
           </Card.Root>
 
-          <Card.Root width="320px">
+          <Card.Root width="300px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Card.Description>
                 <Image
+                  borderRadius="lg"
                   src={mehdi}
                   alt="Naruto vs Sasuke"
-                  aspectRatio={3 / 4}
+                  aspectRatio={6 / 7}
                   width="300px"
                 />
               </Card.Description>
@@ -65,13 +67,14 @@ const WhoWeAre = () => {
             </Card.Footer>
           </Card.Root>
 
-          <Card.Root width="320px">
+          <Card.Root width="300px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Card.Description>
                 <Image
+                  borderRadius="lg"
                   src={sepehr}
                   alt="Naruto vs Sasuke"
-                  aspectRatio={3 / 4}
+                  aspectRatio={6 / 7}
                   width="300px"
                 />
               </Card.Description>
@@ -88,13 +91,14 @@ const WhoWeAre = () => {
             </Card.Footer>
           </Card.Root>
 
-          <Card.Root width="320px">
+          <Card.Root width="300px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Card.Description>
                 <Image
+                  borderRadius="lg"
                   src={erfan}
                   alt="Naruto vs Sasuke"
-                  aspectRatio={3 / 4}
+                  aspectRatio={6 / 7}
                   width="300px"
                 />
               </Card.Description>
