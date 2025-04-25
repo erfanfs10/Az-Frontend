@@ -10,10 +10,11 @@ import {
   Fieldset,
   Button,
   Input,
+  Link,
   Stack,
 } from "@chakra-ui/react";
 import SectionName from "./SectionName";
-import pic from "../assets/sol.webp";
+import map from "../assets/map.webp";
 
 const ContactUs = () => {
   const {
@@ -25,7 +26,7 @@ const ContactUs = () => {
 
   const onSubmit = handleSubmit((e) => {
     console.log(e.name, e.email, e.subject, e.message);
-    reset()
+    reset();
   });
 
   return (
@@ -37,7 +38,14 @@ const ContactUs = () => {
         <GridItem colSpan={{ base: 6, sm: 6, md: 3, lg: 3, xl: 3 }}>
           <form onSubmit={onSubmit}>
             <Flex justifyContent="center" alignItems="center">
-              <Fieldset.Root size="lg" maxW="md">
+              <Fieldset.Root
+                bg="bg.subtle"
+                size="lg"
+                maxW="md"
+                p="10"
+                borderRadius="lg"
+                shadow="md"
+              >
                 <Stack>
                   <Fieldset.Legend>Contact details</Fieldset.Legend>
                   <Fieldset.HelperText>
@@ -80,7 +88,17 @@ const ContactUs = () => {
         </GridItem>
         <GridItem colSpan={{ base: 6, sm: 6, md: 3, lg: 3, xl: 3 }}>
           <Flex justifyContent="center" alignItems="center">
-            <Image height="400px" src={pic} />
+            <Link
+              p="5"
+              bg="bg.subtle"
+              borderRadius="lg"
+              shadow="md"
+              href="https://maps.app.goo.gl/7izzFub1TxLcQjgb9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image height="400px" src={map} />
+            </Link>
           </Flex>
         </GridItem>
       </Grid>
