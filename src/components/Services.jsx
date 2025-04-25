@@ -11,11 +11,11 @@ const Services = () => {
           mt="20px"
           direction="row"
           wrap="wrap"
-          gap="4"
-          justifyContent="space-between"
+          gap="2"
+          justifyContent="space-around"
           alignItems="center"
         >
-          <Card.Root width="400px">
+          <Card.Root width="400px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Avatar.Root size="lg" shape="rounded">
                 <Avatar.Image src="https://picsum.photos/200/300" />
@@ -29,7 +29,8 @@ const Services = () => {
               </Card.Description>
             </Card.Body>
           </Card.Root>
-          <Card.Root width="400px">
+
+          <Card.Root width="400px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Avatar.Root size="lg" shape="rounded">
                 <Avatar.Image src="https://picsum.photos/200/300" />
@@ -43,7 +44,8 @@ const Services = () => {
               </Card.Description>
             </Card.Body>
           </Card.Root>
-          <Card.Root width="400px">
+          
+          <Card.Root width="400px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Avatar.Root size="lg" shape="rounded">
                 <Avatar.Image src="https://picsum.photos/200/300" />
