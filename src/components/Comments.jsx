@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  Avatar,
-  HStack,
-  Text,
-  Flex,
-  Card,
-} from "@chakra-ui/react";
+import { Avatar, HStack, Text, Flex, Card } from "@chakra-ui/react";
 import SectionName from "./SectionName";
 
 const Comments = () => {
@@ -17,11 +11,11 @@ const Comments = () => {
           mt="20px"
           direction="row"
           wrap="wrap"
-          gap="4"
-          justifyContent="space-between"
+          gap="2"
+          justifyContent="space-around"
           alignItems="center"
         >
-          <Card.Root width="320px">
+          <Card.Root width="300px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Card.Title mt="2">Nue Camp</Card.Title>
               <Card.Description>
@@ -32,7 +26,7 @@ const Comments = () => {
             </Card.Body>
             <Card.Footer justifyContent="flex-start">
               <HStack gap="4">
-                <Avatar.Root size="lg">
+                <Avatar.Root shape="rounded" size="lg">
                   <Avatar.Fallback />
                   <Avatar.Image src="https://i.pravatar.cc/300?u=iu" />
                 </Avatar.Root>
@@ -43,7 +37,7 @@ const Comments = () => {
             </Card.Footer>
           </Card.Root>
 
-          <Card.Root width="320px">
+          <Card.Root width="300px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Card.Title mt="2">Nue Camp</Card.Title>
               <Card.Description>
@@ -54,7 +48,7 @@ const Comments = () => {
             </Card.Body>
             <Card.Footer justifyContent="flex-start">
               <HStack gap="4">
-                <Avatar.Root size="lg">
+                <Avatar.Root shape="rounded" size="lg">
                   <Avatar.Fallback />
                   <Avatar.Image src="https://i.pravatar.cc/300?u=iu" />
                 </Avatar.Root>
@@ -65,7 +59,7 @@ const Comments = () => {
             </Card.Footer>
           </Card.Root>
 
-          <Card.Root width="320px">
+          <Card.Root width="300px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Card.Title mt="2">Nue Camp</Card.Title>
               <Card.Description>
@@ -76,7 +70,7 @@ const Comments = () => {
             </Card.Body>
             <Card.Footer justifyContent="flex-start">
               <HStack gap="4">
-                <Avatar.Root size="lg">
+                <Avatar.Root shape="rounded" size="lg">
                   <Avatar.Fallback />
                   <Avatar.Image src="https://i.pravatar.cc/300?u=iu" />
                 </Avatar.Root>
@@ -87,7 +81,7 @@ const Comments = () => {
             </Card.Footer>
           </Card.Root>
 
-          <Card.Root width="320px">
+          <Card.Root width="300px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Card.Title mt="2">Nue Camp</Card.Title>
               <Card.Description>
@@ -98,7 +92,7 @@ const Comments = () => {
             </Card.Body>
             <Card.Footer justifyContent="flex-start">
               <HStack gap="4">
-                <Avatar.Root size="lg">
+                <Avatar.Root shape="rounded" size="lg">
                   <Avatar.Fallback />
                   <Avatar.Image src="https://i.pravatar.cc/300?u=iu" />
                 </Avatar.Root>
