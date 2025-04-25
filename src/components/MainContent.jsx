@@ -3,6 +3,10 @@ import { SimpleGrid } from "@chakra-ui/react";
 import Banner from "./Banner";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
+import WorkWithUs from "./WorkWithUs";
+import Comments from "./Comments";
+import WhoWeAre from "./WhoWeAre";
+import ContactUs from "./ContactUs";
 
 const MainContent = () => {
   return (
@@ -10,6 +14,10 @@ const MainContent = () => {
       <Banner />
       <Portfolio />
       <Services />
+      <WorkWithUs/>
+      <Comments/>
+      <WhoWeAre/>
+      <ContactUs/>
     </SimpleGrid>
   );
 };
