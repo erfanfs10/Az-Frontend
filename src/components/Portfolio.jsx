@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { Grid, GridItem, VStack, Image, Tabs, Flex } from "@chakra-ui/react";
+import {
+  Grid,
+  GridItem,
+  VStack,
+  Image,
+  Tabs,
+  Flex,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import SectionName from "./SectionName";
 import Eth from "../assets/eth.webp";
 import Trx from "../assets/trx.webp";
@@ -7,6 +15,10 @@ import Sol from "../assets/sol.webp";
 
 const Portfolio = () => {
   const [pic, setPic] = useState(Eth);
+  const tabOrientation = useBreakpointValue({
+    base: "horizontal",
+    md: "vertical",
+  });
 
   return (
     <>
@@ -20,6 +32,7 @@ const Portfolio = () => {
               value={pic}
               onValueChange={(e) => setPic(e.value)}
               variant="plain"
+              orientation={tabOrientation}
             >
               <Tabs.List bg="bg.muted" p="2" borderRadius="lg" shadow="md">
                 <Tabs.Trigger borderRadius="lg" value={Eth}>
