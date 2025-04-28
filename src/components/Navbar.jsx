@@ -1,22 +1,72 @@
-import React from "react";
 import { Flex, HStack, Link } from "@chakra-ui/react";
 import IconName from "./IconName";
 import ChangeLang from "./ChangeLang";
 
-const Navbar = () => {
+const Navbar = ({ scrollToSection }) => {
   return (
     <>
-      <Flex direction="row" alignItems="center" justifyContent="space-between">
-        <IconName />
+      <Flex
+        top="0"
+        left="0"
+        right="0"
+        p="10px"
+        direction="row"
+        alignItems="center"
+        justifyContent="space-between"
+        position="fixed"
+        zIndex="overlay"
+        w="full"
+        bg={{_light:"gray.100", _dark:"gray.800"}}
+      >
+        <IconName scrollToSection={scrollToSection} />
         <HStack gap="10">
-          <Link variant="underline">
-            About us
+          <Link
+            variant="underline"
+            onClick={() => {
+              scrollToSection("portfolio");
+            }}
+          >
+            Portfolio
           </Link>
-          <Link variant="underline">
-            Projects
+          <Link
+            variant="underline"
+            onClick={() => {
+              scrollToSection("services");
+            }}
+          >
+            Services
           </Link>
-          <Link variant="underline">
+          <Link
+            variant="underline"
+            onClick={() => {
+              scrollToSection("workWithUs");
+            }}
+          >
+            Work With Us
+          </Link>
+          <Link
+            variant="underline"
+            onClick={() => {
+              scrollToSection("comments");
+            }}
+          >
+            Comments
+          </Link>
+          <Link
+            variant="underline"
+            onClick={() => {
+              scrollToSection("ourTeam");
+            }}
+          >
             Our Team
+          </Link>
+          <Link
+            variant="underline"
+            onClick={() => {
+              scrollToSection("contact");
+            }}
+          >
+            Contact
           </Link>
         </HStack>
         <ChangeLang />

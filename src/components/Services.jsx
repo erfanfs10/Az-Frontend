@@ -5,7 +5,7 @@ import SectionName from "./SectionName";
 const Services = () => {
   return (
     <>
-      <Flex direction="column">
+      <Flex direction="column" id="services">
         <SectionName title="Services" />
         <Flex
           mt="20px"
@@ -44,7 +44,7 @@ const Services = () => {
               </Card.Description>
             </Card.Body>
           </Card.Root>
-          
+
           <Card.Root width="400px" borderRadius="lg" shadow="md">
             <Card.Body gap="2">
               <Avatar.Root size="lg" shape="rounded">

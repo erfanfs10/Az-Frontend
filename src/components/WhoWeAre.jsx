@@ -9,7 +9,7 @@ import erfan from "../assets/erfan.webp";
 const WhoWeAre = () => {
   return (
     <>
-      <Flex direction="column">
+      <Flex direction="column" id="ourTeam">
         <SectionName title="Who We Are" />
         <Flex
           mt="20px"

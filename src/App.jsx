@@ -4,12 +4,21 @@ import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 
 function App() {
+  const scrollToSection = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <Flex m="15px" gap="2" direction="column">
-      <Navbar />
-      <MainContent />
-      <Footer/>
-    </Flex>
+    <>
+      <Flex gap="2" direction="column">
+        <Navbar scrollToSection={scrollToSection} />
+        <MainContent />
+        <Footer scrollToSection={scrollToSection}/>
+      </Flex>
+    </>
   );
 }
 

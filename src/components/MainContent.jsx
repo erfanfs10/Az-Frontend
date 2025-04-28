@@ -10,14 +10,14 @@ import ContactUs from "./ContactUs";
 
 const MainContent = () => {
   return (
-    <SimpleGrid columns={1}>
+    <SimpleGrid mt="30px" columns={1}>
       <Banner />
       <Portfolio />
       <Services />
-      <WorkWithUs/>
-      <Comments/>
-      <WhoWeAre/>
-      <ContactUs/>
+      <WorkWithUs />
+      <Comments />
+      <WhoWeAre />
+      <ContactUs />
     </SimpleGrid>
   );
 };

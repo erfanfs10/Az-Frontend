@@ -5,7 +5,7 @@ import SectionName from "./SectionName";
 const Comments = () => {
   return (
     <>
-      <Flex direction="column">
+      <Flex direction="column" id="comments">
         <SectionName title="Our Customers Opinions" />
         <Flex
           mt="20px"

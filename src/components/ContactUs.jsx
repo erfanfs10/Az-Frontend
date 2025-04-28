@@ -31,7 +31,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <Grid templateColumns="repeat(6, 1fr)" gap="3">
+      <Grid templateColumns="repeat(6, 1fr)" gap="3" id="contact">
         <GridItem colSpan={6} mb="30px">
           <SectionName title="Contact Us" />
         </GridItem>

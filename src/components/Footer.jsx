@@ -4,12 +4,12 @@ import IconName from "./IconName";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare, FaTelegram } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({scrollToSection}) => {
   return (
     <>
       <Separator size="sm" mt="20px" borderColor="gray.400/30" />
       <Flex m="10px" justifyContent="space-between" alignItems="center">
-        <IconName />
+        <IconName scrollToSection={scrollToSection}/>
         <HStack>
           <Icon size="lg">
             <FaSquareXTwitter />
