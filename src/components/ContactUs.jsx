@@ -13,6 +13,8 @@ import {
   Link,
   Stack,
 } from "@chakra-ui/react";
+import { toaster } from "./ui/toaster";
+import apiClient from "../api/client";
 import SectionName from "./SectionName";
 import map from "../assets/map.webp";
 
@@ -25,8 +27,21 @@ const ContactUs = () => {
   } = useForm();
 
   const onSubmit = handleSubmit((e) => {
-    console.log(e.name, e.email, e.subject, e.message);
-    reset();
+    apiClient
+      .post(`contact/`, e)
+      .then((res) => {
+        toaster.create({
+          title: `Thank You For Your Contact`,
+          type: "success",
+        });
+        reset();
+      })
+      .catch((err) => {
+        toaster.create({
+          title: `Something Went Wrong Please Try Again`,
+          type: "error",
+        });
+      });
   });
 
   return (
