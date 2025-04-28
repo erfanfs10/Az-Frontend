@@ -1,6 +1,8 @@
 import { Flex, HStack, Link } from "@chakra-ui/react";
 import IconName from "./IconName";
 import ChangeLang from "./ChangeLang";
+import CustomMenu from "./CustomMenu";
+import { links } from "../links";
 
 const Navbar = ({ scrollToSection }) => {
   return (
@@ -16,60 +18,26 @@ const Navbar = ({ scrollToSection }) => {
         position="fixed"
         zIndex="overlay"
         w="full"
-        bg={{_light:"gray.100", _dark:"gray.800"}}
+        bg={{ _light: "gray.100", _dark: "gray.800" }}
       >
         <IconName scrollToSection={scrollToSection} />
-        <HStack gap="10">
-          <Link
-            variant="underline"
-            onClick={() => {
-              scrollToSection("portfolio");
-            }}
-          >
-            Portfolio
-          </Link>
-          <Link
-            variant="underline"
-            onClick={() => {
-              scrollToSection("services");
-            }}
-          >
-            Services
-          </Link>
-          <Link
-            variant="underline"
-            onClick={() => {
-              scrollToSection("workWithUs");
-            }}
-          >
-            Work With Us
-          </Link>
-          <Link
-            variant="underline"
-            onClick={() => {
-              scrollToSection("comments");
-            }}
-          >
-            Comments
-          </Link>
-          <Link
-            variant="underline"
-            onClick={() => {
-              scrollToSection("ourTeam");
-            }}
-          >
-            Our Team
-          </Link>
-          <Link
-            variant="underline"
-            onClick={() => {
-              scrollToSection("contact");
-            }}
-          >
-            Contact
-          </Link>
+        <HStack gap="10" hideBelow="lg">
+          {links.map((link) => (
+            <Link
+              key={link.title}
+              variant="underline"
+              onClick={() => {
+                scrollToSection(link.section);
+              }}
+            >
+              {link.title}
+            </Link>
+          ))}
         </HStack>
-        <ChangeLang />
+        <HStack gap="3">
+          <ChangeLang />
+          <CustomMenu scrollToSection={scrollToSection} />
+        </HStack>
       </Flex>
     </>
   );

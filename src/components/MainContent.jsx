@@ -10,7 +10,7 @@ import ContactUs from "./ContactUs";
 
 const MainContent = () => {
   return (
-    <SimpleGrid mt="30px" columns={1}>
+    <SimpleGrid mt="30px" mx="20px" columns={1}>
       <Banner />
       <Portfolio />
       <Services />

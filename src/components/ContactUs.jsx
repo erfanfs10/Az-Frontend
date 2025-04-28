@@ -40,7 +40,7 @@ const ContactUs = () => {
             <Flex justifyContent="center" alignItems="center">
               <Fieldset.Root
                 bg="bg.subtle"
-                size="lg"
+                size={{ base: "sm", sm: "sm", md: "md", lg: "lg", xl: "lg" }}
                 maxW="md"
                 p="10"
                 borderRadius="lg"
@@ -79,7 +79,17 @@ const ContactUs = () => {
                   </Field.Root>
                 </Fieldset.Content>
 
-                <Button type="submit" alignSelf="flex-start">
+                <Button
+                  type="submit"
+                  alignSelf="flex-start"
+                  size={{
+                    base: "sm",
+                    sm: "sm",
+                    md: "md",
+                    lg: "md",
+                    xl: "md",
+                  }}
+                >
                   Submit
                 </Button>
               </Fieldset.Root>

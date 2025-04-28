@@ -29,6 +29,7 @@ const Portfolio = () => {
         <GridItem colSpan={{ base: 6, sm: 6, md: 3, lg: 3, xl: 3 }}>
           <Flex justifyContent="center" alignItems="center">
             <Tabs.Root
+              size={{ base: "sm", sm: "sm", md: "md", lg: "lg", xl: "lg" }}
               value={pic}
               onValueChange={(e) => setPic(e.value)}
               variant="plain"

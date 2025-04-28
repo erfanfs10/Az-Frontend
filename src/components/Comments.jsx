@@ -1,21 +1,34 @@
 import React from "react";
-import { Avatar, HStack, Text, Flex, Card } from "@chakra-ui/react";
+import {
+  Avatar,
+  HStack,
+  Text,
+  Flex,
+  Card,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import SectionName from "./SectionName";
 
 const Comments = () => {
   return (
     <>
-      <Flex direction="column" id="comments">
-        <SectionName title="Our Customers Opinions" />
-        <Flex
-          mt="20px"
-          direction="row"
-          wrap="wrap"
-          gap="2"
-          justifyContent="space-around"
-          alignItems="center"
-        >
-          <Card.Root width="300px" borderRadius="lg" shadow="md">
+      <Grid templateColumns="repeat(4, 1fr)" gap="3" id="comments">
+        <GridItem colSpan={4} mb="30px">
+          <SectionName title="Our Customers Opinions" />
+        </GridItem>
+        <GridItem colSpan={{ base: 4, sm: 4, md: 3, lg: 1, xl: 1 }}>
+          <Card.Root
+            size={{
+              base: "sm",
+              sm: "sm",
+              md: "md",
+              lg: "lg",
+              xl: "lg",
+            }}
+            borderRadius="lg"
+            shadow="md"
+          >
             <Card.Body gap="2">
               <Card.Title mt="2">Nue Camp</Card.Title>
               <Card.Description>
@@ -36,8 +49,19 @@ const Comments = () => {
               </HStack>
             </Card.Footer>
           </Card.Root>
-
-          <Card.Root width="300px" borderRadius="lg" shadow="md">
+        </GridItem>
+        <GridItem colSpan={{ base: 4, sm: 4, md: 3, lg: 1, xl: 1 }}>
+          <Card.Root
+            size={{
+              base: "sm",
+              sm: "sm",
+              md: "md",
+              lg: "lg",
+              xl: "lg",
+            }}
+            borderRadius="lg"
+            shadow="md"
+          >
             <Card.Body gap="2">
               <Card.Title mt="2">Nue Camp</Card.Title>
               <Card.Description>
@@ -58,8 +82,19 @@ const Comments = () => {
               </HStack>
             </Card.Footer>
           </Card.Root>
-
-          <Card.Root width="300px" borderRadius="lg" shadow="md">
+        </GridItem>
+        <GridItem colSpan={{ base: 4, sm: 4, md: 3, lg: 1, xl: 1 }}>
+          <Card.Root
+            size={{
+              base: "sm",
+              sm: "sm",
+              md: "md",
+              lg: "lg",
+              xl: "lg",
+            }}
+            borderRadius="lg"
+            shadow="md"
+          >
             <Card.Body gap="2">
               <Card.Title mt="2">Nue Camp</Card.Title>
               <Card.Description>
@@ -80,8 +115,19 @@ const Comments = () => {
               </HStack>
             </Card.Footer>
           </Card.Root>
-
-          <Card.Root width="300px" borderRadius="lg" shadow="md">
+        </GridItem>
+        <GridItem colSpan={{ base: 4, sm: 4, md: 3, lg: 1, xl: 1 }}>
+          <Card.Root
+            size={{
+              base: "sm",
+              sm: "sm",
+              md: "md",
+              lg: "lg",
+              xl: "lg",
+            }}
+            borderRadius="lg"
+            shadow="md"
+          >
             <Card.Body gap="2">
               <Card.Title mt="2">Nue Camp</Card.Title>
               <Card.Description>
@@ -102,8 +148,8 @@ const Comments = () => {
               </HStack>
             </Card.Footer>
           </Card.Root>
-        </Flex>
-      </Flex>
+        </GridItem>
+      </Grid>
     </>
   );
 };

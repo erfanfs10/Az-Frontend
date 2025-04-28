@@ -12,7 +12,13 @@ const SectionName = ({ title }) => {
           width="fit-content"
           px="6"
           py="2"
-          fontSize="xl"
+          fontSize={{
+            base: "lg",
+            sm: "lg",
+            md: "lg",
+            lg: "lg",
+            xl: "xl",
+          }}
           fontWeight="bold"
           bg="bg.subtle"
         >
