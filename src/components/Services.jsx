@@ -24,9 +24,9 @@ const Services = () => {
 
   return (
     <>
-      <Grid templateColumns="repeat(4, 1fr)" gap="3" id="services">
-        <GridItem colSpan={4} mb="30px">
-          <SectionName title="Services" />
+      <Grid templateColumns="repeat(4, 1fr)" gap="3">
+        <GridItem colSpan={4}>
+          <SectionName title="Services" id="services"/>
         </GridItem>
         {services?.map((service) => (
           <GridItem
@@ -41,7 +41,6 @@ const Services = () => {
                 lg: "lg",
                 xl: "lg",
               }}
-              borderRadius="lg"
               shadow="md"
             >
               <Card.Body gap="2">

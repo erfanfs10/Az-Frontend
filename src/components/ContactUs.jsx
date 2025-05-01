@@ -46,9 +46,9 @@ const ContactUs = () => {
 
   return (
     <>
-      <Grid templateColumns="repeat(6, 1fr)" gap="3" id="contact">
-        <GridItem colSpan={6} mb="30px">
-          <SectionName title="Contact Us" />
+      <Grid templateColumns="repeat(6, 1fr)" gap="3">
+        <GridItem colSpan={6}>
+          <SectionName title="Contact Us" id="contact" />
         </GridItem>
         <GridItem colSpan={{ base: 6, sm: 6, md: 3, lg: 3, xl: 3 }}>
           <form onSubmit={onSubmit}>

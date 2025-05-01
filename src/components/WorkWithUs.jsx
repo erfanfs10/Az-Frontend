@@ -1,17 +1,16 @@
 import React from "react";
-import { VStack, Text, Button, Flex } from "@chakra-ui/react";
+import { VStack, Text, Button, Flex, Grid, GridItem } from "@chakra-ui/react";
 import SectionName from "./SectionName";
 
 const WorkWithUs = () => {
   return (
     <>
-      <Flex
-        id="workWithUs"
-        justifyContent="center"
-        alignItems="center"
-        direction="column"
-      >
-        <SectionName title="Work With Us" />
+      <Grid templateColumns="repeat(4, 1fr)" gap="3">
+        <GridItem colSpan={4}>
+          <SectionName title="Work With Us" id="workWithUs" />
+        </GridItem>
+      </Grid>
+      <GridItem>
         <VStack>
           <Text
             my="50px"
@@ -38,7 +37,7 @@ const WorkWithUs = () => {
             Learn More
           </Button>
         </VStack>
-      </Flex>
+      </GridItem>
     </>
   );
 };

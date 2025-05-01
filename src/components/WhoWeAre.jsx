@@ -12,7 +12,7 @@ import apiClient, { StaticURL } from "../api/client";
 import { CanceledError } from "axios";
 import SectionName from "./SectionName";
 
-const WhoWeAre = () => {
+const WhoWeAre = ({id}) => {
   const [team, setTeam] = useState(null);
 
   useEffect(() => {
@@ -32,9 +32,9 @@ const WhoWeAre = () => {
 
   return (
     <>
-      <Grid templateColumns="repeat(4, 1fr)" gap="3" id="ourTeam">
-        <GridItem colSpan={4} mb="30px">
-          <SectionName title="Who We Are" />
+      <Grid templateColumns="repeat(4, 1fr)" gap="3">
+        <GridItem colSpan={4}>
+          <SectionName title="Who We Are" id="ourTeam"/>
         </GridItem>
 
         {team?.map((t) => (

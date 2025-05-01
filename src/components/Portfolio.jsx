@@ -21,9 +21,9 @@ const Portfolio = () => {
 
   return (
     <>
-      <Grid templateColumns="repeat(6, 1fr)" gap="3" id="portfolio">
-        <GridItem colSpan={6} mb="30px">
-          <SectionName title="Portfolio" />
+      <Grid templateColumns="repeat(6, 1fr)" gap="3">
+        <GridItem colSpan={6}>
+          <SectionName title="Portfolio" id="portfolio" />
         </GridItem>
         <GridItem colSpan={{ base: 6, sm: 6, md: 3, lg: 3, xl: 3 }}>
           <VStack>

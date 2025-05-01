@@ -1,12 +1,13 @@
 import React from "react";
 import { Text, Flex, Separator } from "@chakra-ui/react";
 
-const SectionName = ({ title }) => {
+const SectionName = ({ title, id }) => {
   return (
     <>
-      <Separator size="md" my="30px" borderColor="gray.400/30" />
+      <Separator size="md" my="20px" borderColor="gray.400/30" id={id}/>
       <Flex justifyContent="center">
         <Text
+        mb="20px"
           borderRadius="lg"
           shadow="md"
           width="fit-content"
