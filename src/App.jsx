@@ -2,6 +2,7 @@ import { Flex } from "@chakra-ui/react";
 import Navbar from "./components/Navbar";
 import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
+import "./assets/style.css"
 
 function App() {
   const scrollToSection = (section) => {
