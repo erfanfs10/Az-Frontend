@@ -6,7 +6,8 @@ const IconName = ({ scrollToSection }) => {
   return (
     <HStack>
       <Image
-      fit="contain"
+        _hover={{ cursor: "pointer" }}
+        fit="contain"
         src={Logo}
         onClick={() => {
           scrollToSection("brand");
@@ -20,6 +21,7 @@ const IconName = ({ scrollToSection }) => {
         }}
       />
       <Text
+        _hover={{ cursor: "pointer" }}
         fontSize={{
           base: "md",
           sm: "md",
@@ -32,7 +34,7 @@ const IconName = ({ scrollToSection }) => {
           scrollToSection("brand");
         }}
       >
-        Impalers
+        Devora
       </Text>
     </HStack>
   );
